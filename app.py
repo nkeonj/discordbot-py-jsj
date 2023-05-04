@@ -69,7 +69,7 @@ def start():
     return render_template('start.html', form=form, error=error)
 
 
-@app.route('/vote', methods=['GET', 'POST'])
+@app.route('/투표', methods=['GET', 'POST'])
 def vote():
     if get_setting('stage') != 'vote':
         return redirect(url_for('index'))
